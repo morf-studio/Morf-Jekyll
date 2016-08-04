@@ -21,9 +21,7 @@ Single Purpose Class Library in Sass
 
 
 ## Getting Started
-Once you've cloned the repository, you'll be running the command 'gulp' in your terminal, but first we must install gulp and browsersync into our project. So:
-`npm install gulp`
-`npm install browsersync`
+Once you've cloned the repository, you'll be running the command 'gulp' in your terminal to build jekyll, live reload using browser-sync.
 
 You have to init a gulp.
 
@@ -32,18 +30,18 @@ https://nvbn.github.io/2015/06/19/jekyll-browsersync/
 
 First of all, init a new package and install all dependencies:
 
-`
+```
 npm init
 sudo npm install -g gulp
 npm install --save-dev gulp-shell lodash gulp browser-sync
-`
+```
 That's installing (and saving as dependencies): gulp-shell, lodash, gulp, and browser-sync
 
-(Did it tell you WARN? - update dependencies with npm update )
+** Did it tell you WARN? - you can always update dependencies with `npm update ____` )
 
 And create a gulpfile.js with:
 
-`
+```
 var gulp = require('gulp');
 var shell = require('gulp-shell');
 var browserSync = require('browser-sync').create();
@@ -61,17 +59,15 @@ gulp.task('serve', function () {
 });
 
 gulp.task('default', ['build', 'serve']);
+```
 
-`
-Then add created files and folders to Jekyll exclude, otherwise gulp will found more than one task with the same name. In _config.yml:
+Then add created files and folders to Jekyll exclude, otherwise gulp will found more than one task with the same name. In `_config.yml:`
 
-`
-exclude: [node_modules, gulpfile.js]
-And that’s all! For running it:
-`
 
-gulp
+`exclude: [node_modules, gulpfile.js]`
+
+And that’s all! Inside the project, For running it: `gulp`
 
 
 ## Remember:
-- when you change something in the `_config.yml` file (like your site title or site email), you'll need to rebuild the jekyll site, which means stop the gulp process, and just run it again. This will rebuild the jekyll changes and they should show up! 
+- when you change something in the `_config.yml` file (like your site title or site email), you'll need to rebuild the jekyll site, which means stop the gulp process, and just run it again. This will rebuild the jekyll changes and they should show up!
