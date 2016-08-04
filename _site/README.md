@@ -14,6 +14,8 @@ Single Purpose Class Library in Sass
 
 ## Design Objectives
 
+With inspiration from Tachyons/Bass.css ...
+
 ## Technology Objectives
 
 ## Reminders
