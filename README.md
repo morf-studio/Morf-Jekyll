@@ -71,3 +71,7 @@ And that’s all! For running it:
 `
 
 gulp
+
+
+## Remember:
+- when you change something in the `_config.yml` file (like your site title or site email), you'll need to rebuild the jekyll site, which means stop the gulp process, and just run it again. This will rebuild the jekyll changes and they should show up! 
