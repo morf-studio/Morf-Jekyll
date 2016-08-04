@@ -18,3 +18,6 @@ github-username:
 
 # Build settings
 markdown: kramdown
+
+# Exclude for gulp / browsersync
+exclude: [node_modules, gulpfile.js]
