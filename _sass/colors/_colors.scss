@@ -1,0 +1,55 @@
+// BRAND COLORS
+
+$gold: #BA9F00;
+$gold-lt: #EACF34;
+$blue: #5CB7CC;
+$blue-lt: #A6D0DD;
+
+
+// UTILITY COLORS
+$black: #000;
+$black10:rgba(0,0,0,0.1);
+$black20:rgba(0,0,0,0.2);
+$black30:rgba(0,0,0,0.3);
+$black40:rgba(0,0,0,0.4);
+$black50:rgba(0,0,0,0.5);
+$black60:rgba(0,0,0,0.6);
+$black70:rgba(0,0,0,0.7);
+$black80:rgba(0,0,0,0.8);
+$black90:rgba(0,0,0,0.9);
+.black  {color:$black;}
+.black-1{color:$black10;}
+.black-2{color:$black20;}
+.black-3{color:$black30;}
+.black-4{color:$black40;}
+.black-5{color:$black50;}
+.black-6{color:$black60;}
+.black-7{color:$black70;}
+.black-8{color:$black80;}
+.black-9{color:$black90;}
+
+$white: #FFF;
+$white10:rgba(0,0,0,0.1);
+$white20:rgba(0,0,0,0.2);
+$white30:rgba(0,0,0,0.3);
+$white40:rgba(0,0,0,0.4);
+$white50:rgba(0,0,0,0.5);
+$white60:rgba(0,0,0,0.6);
+$white70:rgba(0,0,0,0.7);
+$white80:rgba(0,0,0,0.8);
+$white90:rgba(0,0,0,0.9);
+
+.white  {color:$white;}
+.white-1{color:$white10;}
+.white-2{color:$white20;}
+.white-3{color:$white30;}
+.white-4{color:$white40;}
+.white-5{color:$white50;}
+.white-6{color:$white60;}
+.white-7{color:$white70;}
+.white-8{color:$white80;}
+.white-9{color:$white90;}
+
+@import
+  "shadows"
+;

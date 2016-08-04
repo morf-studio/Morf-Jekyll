@@ -1,0 +1,142 @@
+
+
+$base-font-family: 'canada-type-gibson', -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif ;
+$base-font-size:   16px;
+$base-line-height: 1.5;
+
+$heading-font-family: 'canada-type-gibson', -apple-system, BlinkMacSystemFont,
+  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+  "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$condensed-font-family:'alternate-gothic-no-1-d', "Roboto Condensed", "Roboto", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+.condensed{
+  font-family:$condensed-font-family;
+  font-weight:normal;
+}
+.tall{
+  font-size:2em;
+}
+.uppercase{
+  text-transform:uppercase;
+}
+/* Basscss Type Scale */
+// Font Scale    e.g.
+$h1: 2rem;    // 32px
+$h2: 1.5rem;  // 24px
+$h3: 1.25rem; // 20px
+$h4: 1rem;    // 16px
+$h5: .875rem; // 14px
+$h6: .75rem;  // 12px
+$small-font-size: .875rem;
+
+// Line Height, Maybe lh as class
+$leading-solid: 1;
+$leading-headline: 1.25;
+$leading-text: 1.5;
+
+// Addtl Style & Weight Variables
+$caps-letter-spacing: .2em;
+$bold-font-weight: 600;
+
+h1, .h1 { font-size: $h1 }
+h2, .h2 { font-size: $h2 }
+h3, .h3 { font-size: $h3 }
+h4, .h4 { font-size: $h4 }
+h5, .h5 { font-size: $h5 }
+h6, .h6 { font-size: $h6 }
+
+$measure-width:40em;
+$measure-width-narrow:22em;
+.measure{
+  max-width:$measure-width;
+}
+.measure-narrow{
+  max-width:$measure-width-narrow;
+}
+
+.leading-solid { line-height: $leading-solid }
+.leading-headline { line-height: $leading-headline }
+.leading-text { line-height: $leading-text }
+
+/* Basscss Typography */
+.font-family-inherit { font-family: inherit }
+.font-size-inherit { font-size: inherit }
+.text-decoration-none { text-decoration: none }
+
+strong { font-weight: $bold-font-weight}
+.regular { font-weight: normal }
+.italic  { font-style: italic }
+.caps    { text-transform: uppercase; letter-spacing: $caps-letter-spacing; }
+.bold {font-weight:bold;}
+.text-left   { text-align: left }
+.text-center       { text-align: center }
+.text-right  { text-align: right }
+.text-justify      { text-align: justify }
+
+.nowrap { white-space: nowrap }
+.break-word { word-wrap: break-word }
+
+.list-style-none { list-style: none }
+.underline { text-decoration: underline }
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+}
+
+//Type Spacing
+$space-before: 1.5rem;
+$space-after:  1.5rem;
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    //color: $text-color;
+    //background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure, small,
+%vertical-rhythm {
+    margin-top:0;
+    margin-bottom: $space-after/2;
+}
+
+
+p {
+  //max-width:$measure-width;
+  //opacity:0.9;
+}
+small{
+  font-size:0.875rem;
+  display:block;
+  line-height:1.5rem;
+  margin-top:0.125rem;
+  //opacity:0.75;
+}
+
+@import
+"headings",
+"lists"
+;

@@ -1,0 +1,36 @@
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.fit{
+  width:100%;
+}
+
+/**
+ * Figures
+ */
+figure > img {
+    //display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+// CSS Tricks Fluid-Width-Video, Using .ratio-x-y Classes to Calculate proportion
+.videoWrapper {
+	position: relative;
+	//padding-bottom: 56.25%; /* 16:9 */
+	//padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

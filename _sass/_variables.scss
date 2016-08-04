@@ -1,0 +1,42 @@
+//Media Queries
+
+
+// Add or remove breakpoints as you desire
+// Incremental half-step powers of 16,
+$breakpoints:(
+s: 32em,
+m: 48em,
+l: 64em,
+xl: 96em,
+xxl: 128em,
+);
+
+@mixin breakpoint($size){
+@each $breakpoint, $value in $breakpoints {
+ @if $size == $breakpoint {
+ @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+ @content;
+ }
+ }
+}
+}
+// EXAMPLE
+//body, .classname {
+   //@include breakpoint(m) {
+   //font-size: 14px;
+   //};
+// }
+
+// Pixel-to-em calculator
+@function em($target, $context: 16) {
+  @return ($target / $context) * 1em;
+}
+
+//Spacing Scale
+$space-xs: .25rem;
+$space-s: .5rem;
+$space-m: 1rem;
+$space-l: 2rem;
+$space-xl: 4rem;
+$space-xxl: 8rem;
+$space-xxxl: 16rem;

@@ -1,0 +1,20 @@
+# Site settings
+title:
+email:
+author:
+description: > # this means to ignore newlines until "baseurl:"
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
+
+facebook-username:
+twitter-username:
+instagram-username:
+dribbble-username:
+tumlbr-username:
+medium-username:
+github-username:
+
+
+# Build settings
+markdown: kramdown

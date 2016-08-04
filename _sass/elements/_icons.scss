@@ -1,0 +1,14 @@
+
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	padding:1rem 0;
+}
+
+.story-icon{
+	@include breakpoint(m) {
+		font-size:2rem;
+	}
+}
