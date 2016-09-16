@@ -4,12 +4,12 @@
   {% include head.html %}
 
   <body>
-    {% include icons.html %}
+    {% include svgdefs.html %}
     {% include header.html %}
 
-    <div class="main wrap">
-        {{ content }}
-    </div>
+    <main class="main" aria-label="Content">
+      {{ content }}
+    </main>
 
     {% include footer.html %}
 
