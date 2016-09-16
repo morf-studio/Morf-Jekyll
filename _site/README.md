@@ -11,6 +11,9 @@ Single Purpose Class Library in Sass
 - Alex Bloom
 - Spencer Harrison
 
+## Credits
+- Hugo Giraudel: Replacement of <code> div.main </code> with <code> main </code> element on default template
+
 ## Design Objectives
 
 With inspiration from Tachyons/Bass.css ...
