@@ -21,3 +21,13 @@ markdown: kramdown
 
 # Exclude for gulp / browsersync
 exclude: [node_modules, gulpfile.js]
+
+#CSS Libraries
+tachyons: true
+bass-css: false
+foundation: false
+
+#If you have your custom css files / libraries from CDN add the links here:
+# for example: https://unpkg.com/tachyons@4.4.1/css/tachyons.min.css
+custom-cdn-css-1:
+custom-cdn-css-1:
